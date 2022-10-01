@@ -25,3 +25,19 @@ if __name__ == "__main__":
 
     for item in ct:
         print(item, ct[item])
+
+    # Ordered dicts
+    ct.update({
+        'a': -3,
+        'b': -2,
+        'd': 3,
+        'e': 2,
+    })
+    sorted(ct.elements())  # return a sorted list from the iterator
+    print(ct)  # Counter({'d': 3, 'a': 2, 'e': 2, 'c': 1, 'b': -1})
+    print(ct.most_common())
+    ct.subtract({
+        'a': 2,
+    })
+    print(ct)  # Counter({'d': 3, 'e': 2, 'c': 1, 'a': 0, 'b': -1})
+
