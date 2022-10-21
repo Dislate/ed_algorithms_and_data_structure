@@ -42,5 +42,5 @@ def mergeSort(arr):
 
 
 if __name__ == "__main__":
-    # print(factorial(4))
+    print(factorial(4))
     print(mergeSort([356, 97, 846, 215, 547, 985]))
